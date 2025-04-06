@@ -16,7 +16,7 @@ function UpdateTime() {
     const formattedMinute = PadZero(minute);
 
     // Construct the formatted string
-    const formattedDateTime =  month + ' ' + day + ' ' + formattedHour + ':' + formattedMinute + ' ' + ampm;
+    const formattedDateTime =  month + ' ' + day + ", " + formattedHour + ':' + formattedMinute + ' ' + ampm;
 
     document.getElementsByClassName("main-time")[0].innerText = formattedDateTime;
 }

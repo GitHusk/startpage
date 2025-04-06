@@ -14,7 +14,7 @@ function Search() {
 
     const search_input_value = document.getElementById('search-input').value;
 
-    const full_url = search_url.replace('%s', search_input_value);
+    const full_url = search_url.replace('%s', encodeURIComponent(search_input_value));
 
     window.location.href = full_url;
 }
